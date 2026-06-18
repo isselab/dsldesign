@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DSL Design Book</title>
+  <meta name="description" content="DSL Design book.">
+  <link rel="stylesheet" href="main.css">
+  <link rel="canonical" href="http://dsl.design">
+<!-- link rel="shortcut icon" type ="image/x-icon" href="http://www.cse.chalmers.se/~bergert/images/favicon.ico" -->
+
+
+</head>
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	
+	<div class="navbar-brand"> 
+	<a href="http://www.itu.dk/people/wasowski/" target="_top">Andrzej Wasowski</a> &amp; <a href="http://www.cse.chalmers.se/~bergert/" target="_top">Thorsten Berger</a>
+	</div>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+<!--		<li><a href="http://www.cse.chalmers.se/~bergert/">Home</a></li>
+		<li><a href="http://www.cse.chalmers.se/~bergert/about">About</a></li>
+		<li><a href="http://www.cse.chalmers.se/~bergert/group">Research Group</a></li>
+		-->
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="textid" class="col-sm-12">
+  <h2 id="principles-of-software-language-designfor-model-driven-software-engineering"><strong>Domain-Specific Languages:</strong><br />Effective modeling, automation, and reuse</h2>
+
+<h3 id="overview">Overview</h3>
+<p>A book by <a href="http://www.itu.dk/~wasowski" target="_top">Andrzej Wasowski</a> and <a href="http://www.thorsten-berger.net" target="_top">Thorsten Berger</a>. It is published by Springer (appeared Jan. 2023) and available directly via <a href="https://link.springer.com/book/10.1007/978-3-031-23669-3" target="_top">Springer Link</a> or typical book shops.</p>
+
+<p>The book describes the necessary theory and the pragmatics of using and developing high-level software languages (Domain-Specific Languages, or DSLs) for the effective production of quality software. This includes methods, design patterns, guidelines, and testing practices for defining concrete syntax, abstract syntax, and semantics of languages. The book attempts to be close to technology, while covering multiple paradigms and solutions&mdash;to avoid being limited to a particular technical silo.</p>
+
+<p>We created a classic academic textbook, providing a theoretical and conceptual foundation derived from research, and a sound pedagogy built around many focused problem-solving exercises, concrete take-home lessons, and examples from diverse domains. While DSL books exist, the pedagogy was a key reason to write this book, which follows a standard textbook approach with focused problem-solving exercises and solid grounding in research. It also brings together Software Engineering (SE, a.k.a. modelware) and Programming Language (PL, a.k.a. grammarware perspectives and technologies, which have co-existed for decades.</p>
+
+<h4 id="competencies">Competencies</h4>
+<p>After reading this book, the reader will be able to:</p>
+
+<ul>
+  <li>Perform domain analysis of a problem domain and obtain a meta-model.</li>
+  <li>Engineer external and internal DSLs (note that we focus mostly on external DSLs).</li>
+  <li>Design and improve the concrete syntax of DSLs.</li>
+  <li>Implement DSL semantics using declarative and imperative transformations, code generators and interpreters, in various scenarios such as from text to models, from models to text, involving XML, database, etc.</li>
+  <li>Implement declarative constraints and type rules for DSLs.</li>
+  <li>Test implementations of DSLs.</li>
+  <li>Characterize, classify, and compare languages along various properties.</li>
+</ul>
+
+<h4>Code Repository</h4>
+<p>We provide a <a href="https://bitbucket.org/dsldesign/dsldesign" target="_top">repository with lots of further material</a> (models, code, infrastructure), all integrated via Gradle.</p>
+
+<h4>Buy or Get Access</h4>
+The primary source is Springer Link, where you can access it directly in case your academic institution has a subscription (which most universities have) or buy it as a printed book or an ebook:
+<ul>
+<li><a href="https://link.springer.com/book/10.1007/978-3-031-23669-3" target="_top">Springer Link</a></li>
+</ul>
+You can also buy it from book shops, including:
+<ul>
+<li><a href="https://www.amazon.com/-/dp/3031236688/ref=sr_1_4?qid=167101464" target="_top">Amazon</a></li>
+<li><a href="https://www.barnesandnoble.com/w/domain-specific-languages-andrzej-wasowski/1142696306" target="_top">Barnes&amp;Noble</a></li>
+</ul>
+
+
+<h3>Keynote Presentation</h3>
+The slides of my keynote presentation at the <a href="https://conf.researchr.org/track/models-2022/models-2022-educators-symposium#program" target="_top">MODELS'22 Educators Symposium</a> are <a href="models22 keynote.pdf">available online</a>. The slides of my keynote presentation at <a href="https://conf.researchr.org/home/sle-2025#Keynotes" target="_top">SLE'25</a> are also <a href="sle25 keynote.pdf">available online</a>
+
+<!--
+<h3 id="early-access-material">Early Access Material</h3>
+
+<p>We provided some material for early dissemination, for receiving feedback, and for supporting courses. The following PDFs with example chapters are password-protected. To get access, please contact the authors for the credentials and agree to the license terms below.</p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter1.pdf">Chapter 1: Using Modeling Languages</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter2.pdf">Chapter 2: Building Modeling Languages</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter3.pdf">Chapter 3: Domain Analysis and Abstract Syntax</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter4.pdf">Chapter 4: Concrete Syntax</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter5.pdf">Chapter 5: Static Semantics</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter6.pdf">Chapter 6: Static Semantics with Type Systems</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter7.pdf">Chapter 7: Model and Program Transformation</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter8.pdf">Chapter 8: Interpretation</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter9.pdf">Chapter 9: Internal DSLs</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter10.pdf">Chapter 10: Code Generation</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter11.pdf">Chapter 11: Software Product Lines</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter12.pdf">Chapter 12: Feature Modeling</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-chapter13.pdf">Chapter 13: Model and Language Variability</a></p>
+
+-->
+
+<h3 id="appendices">Appendix Tutorials</h3>
+<p>We also some tutorials with more practical, tool-specific advice. We are currently revising them and making them public below.
+appendices, which we'll make public asap (contact us if you want to see the current versions).</p>
+
+<p><b>(available)</b> <a href="https://www.researchgate.net/publication/378798687_Domain-specific_Languages_Tutorial_A_Class_Modeling#fullTextFileContent" target="_top">Tutorial A: Class Modeling</a></p>
+
+<p><b>(available)</b> <a href="https://www.researchgate.net/profile/Andrzej-Wasowski/publication/378307439_Domain-specific_Languages_Effective_Modeling_Automation_and_Reuse_Tutorial_B_Eclipse_Modeling_Framework/links/65d36aee01325d465211ca8f/Domain-specific-Languages-Effective-Modeling-Automation-and-Reuse-Tutorial-B-Eclipse-Modeling-Framework.pdf" target="_top">Tutorial B: Using the Eclipse Modeling Framework</a></p>
+
+<p>Tutorial C: OCL in a Nutshell</p>
+
+<p>Tutorial D: Xtext in a Nutshell</p>
+
+<h3 id="uses">Known Uses</h3>
+At various occasions, we've heard from colleagues that they have used, are planning to, or are currently using the book for teaching. If you also use it, let us know with a very quick email. So far, we have heard from:
+<ul>
+<li>University of Bielefeld, DE
+<li>Technical University of Dortmund, DE
+<li>University of Oslo, NO
+<li>University of Rostock, DE
+<li>University of Bremen, DE
+<li>University of Potsdam, DE
+<li>North Carolina State University, US
+<li>IT University of Copenhagen, DK
+<li>Chalmers University of Technology and University of Gothenburg, SE
+</ul>
+
+
+<!--
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/dsldesign-references.pdf">References</a></p>
+
+<p><a href="http://www.cse.chalmers.se/~bergert/mdsebook/LICENSE.txt">License</a></p>
+
+<h4 id="license">License</h4>
+<p>(C) 2019, Andrzej Wasowski and Thorsten Berger</p>
+
+<p>This material is provided to you on a personal and limited basis.
+You can use the material personally and in your courses.
+The material must not be distributed by you beyond the course scope.
+This permission is only valid until the publication of the book.
+A different permission may be granted past that point in time.</p>
+-->
+
+</div>
+
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-sm-4">
+			
+		  Andrzej Wasowski<br/>
+		  IT University of Copenhagen<br/>
+		  Rued Langgaards Vej 7,<br />
+		  2300 Copenhagen S<br />
+		  Denmark
+            
+
+		   <p>  </p><p>
+            		  
+            
+		</div>
+<!--		<div class="col-sm-4">
+		  Funding:<br />
+		  
+		</div>
+-->
+		
+		<div class="col-sm-4">
+		  Thorsten Berger<br/>
+		  Ruhr University Bochum<br/>
+		  Universitatsstr. 140<br/>
+		  44799 Bochum<br/>
+		  Germany<br/>
+		  and Chalmers | University of Gothenburg, Sweden
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
