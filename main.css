@@ -1123,6 +1123,26 @@ img {
 .img-circle {
   border-radius: 50%; }
 
+/* Cover image: float on wide screens, center and scale on small screens */
+.cover {
+  vertical-align: top;
+  float: right;
+  margin: 10px;
+  width: 180px;      /* default visual size for desktop */
+  max-width: 30%;    /* don't exceed a portion of the container */
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .cover {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    width: 60%;       /* scales with viewport on mobile */
+    max-width: 220px; /* optional cap so it doesn't grow too large on tablets */
+  }
+}
+
 hr {
   margin-top: 22px;
   margin-bottom: 22px;
